@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    {% if article_number|divisibleby:"2" == True %}
+        <div>Число четное</div>
+    {% else %}
+        <div>Число нечетное</div>
+    {% endif %}
+
+    {% include "odd_even/slug.html" %}
+
+</body>
+</html>
